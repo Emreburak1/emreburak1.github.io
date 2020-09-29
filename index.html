@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--I am here-->
+<!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1252146961623423'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=1252146961623423&ev=PageView &noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="icon" href="/assets/RGB-LogoV4.png">
+    <meta name="description" 
+	content="Boğaziçi DataCamp, veri biliminin iş hayatındaki uygulamalarının anlatıldığı ve ilgili teknolojilerin deneyimlendiği iki günlük atölyeler ve zirveden oluşan bir etkinliktir."
+    >
+    <meta name="keywords" content="boun,bogazici,datacamp,data,science,summit,analytics,and,digital,workshop,business,boğaziçi,camp,veri,bilimi,zirvesi,türkiye,istanbul,en,iyi">
+    <link rel="shortcut icon" type="image/png" href="/assets/logo_icon.png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    
+    
+    <link rel="stylesheet" href="/styles.css"/>
+    <title>
+        Boğaziçi DataCamp '19
+    </title>
+
+    
+    <meta charset="UTF-8">
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128963962-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-128963962-1');
+    </script>
+</head>
+<body>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5d17819f7a48df6da2422b33/1dnaf35q7';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- <nav>
+        <div class="logo-container">
+            <a data-scroll href="#hero" class="nav-link">
+                <img src="assets/RGB-LogoV5.png" alt="Boğaziçi DataCamp">
+            </a>
+        </div>
+        <div class="menu-container">
+            <div>
+                <a data-scroll href="#about" class="nav-link">
+                    Bilgi
+                </a>
+            </div>
+            <div><a data-scroll href="#program" class="nav-link">Program</a></div>
+            <div><a data-scroll href="#partners" class="nav-link">Sponsorlar</a></div>
+            <!-- <div><a data-scroll href="#registerAll" class="nav-link">Kayıt</a></div>
+            <div><a data-scroll href="#contact" class="nav-link">İletişim</a></div>
+            <div><a data-scroll  href="./2019/index.html" class="nav-link">DataCamp'19</a></div>
+            <div><a data-scroll  href="./2018/index.html" class="nav-link">DataCamp'18</a></div>
+
+        </div>
+    </nav> -->
+    <header class="main">
+        <div class="containeer">
+            <a data-scroll href="/" class="logo">
+        
+                <img src="assets/RGB-LogoV5.png" alt="Hack Boğaziçi">
+        
+            </a>
+        
+            <span id="navToggle" class="nav-toggle" onclick="toggleNav()" style="color: white;"><i id="intoggle" class="fas fa-bars"></i></span>
+            
+        
+            <nav id="nav" class="sidenav">
+        
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        
+                <!-- <a href="#about" data-scroll data-type="navItem" class="animated fast fadeOut active">Bilgi</a> -->
+        
+                <a href="/program" data-scroll data-type="navItem" class="animated fast fadeOut">Program</a>
+        
+                <a href="/sponsorlar" data-scroll data-type="navItem" class="animated fast fadeOut">Sponsorlar</a>
+        
+                <a href="/kayit" data-scroll data-type="navItem" class="animated fast fadeOut">Kayıt Ol</a>
+        
+                <a href="/2019" data-scroll data-type="navItem" class="animated fast fadeOut">DataCamp '19</a>
+
+                <a href="/2018" data-scroll data-type="navItem" class="animated fast fadeOut">DataCamp '18</a>
+            </nav>
+        </div>
+        
+    </header>
+    
+    <div class="header header-content clearfix" id="animation">
+        <canvas id="c"></canvas>
+        <div class="header-container">
+            <div class="header-text">
+                <!--<img class="header-logo" src="assets/RGB-LogoV5.png"> -->
+                <h1 class="hero-title">Boğaziçi DataCamp'19</h1>
+                <div class="header-detail-text">
+                    <div style="font-size: 1.1wh;">
+                    <p>Boğaziçi Üniversitesi Bilişim Kulübü Compec tarafından düzenlenen ve bu sene ikinci kez gerçeklesecek olan Boğaziçi DataCamp’e davetlisiniz!</p>
+                    <p>Zirve boyunca veri biliminin iş dünyasındaki güncel uygulamalarını tanırken, workshoplar sırasında uygulamalarını deneyimleyebilceksiniz.</p>
+                    </div>
+                    <div style="font-size: 1.1wh;" style="transform: translateY(10px)">
+                        <h3>Etkinliğe Kalan Süre</h3>
+                        <h3 id="countdownTimer"></h3>
+                        <h3>23 - 24 Kasım</h3>
+                        <!-- <div class="btn btn-outline-primary">
+                            <a data-scroll href="#registerAll" class="nav-link text-warning font-weight-bold text-wrap" style="font-size: 3rem;">Kayıt için Tıkla!</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+            <div class="header-image">
+                <img src="assets/RGB-LogoV6.png" style="width:100%;">
+            </div>
+        </div>
+
+    </div>
+    <section id="about">
+        <div class="container container-wide">
+            <div class="why-container">
+                <h2>Boğaziçi DataCamp Nedir?</h2>
+                <p>
+                    Boğaziçi Datacamp veri bilimi ve onun iş dünyasındaki uygulamalarının konuşması ve katılımcıların workshoplarla uygulayarak öğrenmesi üzerine olan bir zirvedir.  </p>
+                <h3>Yer - Tarih</h3>
+                <p>
+                    Boğaziçi Üniversitesi <br>
+                    23 Kasım Workshop: Bilgisayar Mühendisliği Binası <br>
+                    24 Kasım Zirve: Albert Long Hall
+                 
+                </p>
+            
+
+            </div>
+            <div class="why-container">
+                <h2>Kimler için?</h2>
+                <p>Boğaziçi DataCamp;</p>
+                <ul class="why-list">
+                    <li>
+                        Programlama konseptleri ve algoritmik yaklaşımların bulunduğu Bilgisayar Mühendisliği ve Yönetim Bilişim Sistemi öğrencileri
+                    
+                    </li>
+                    <li>
+                        Veri Bilimi ile ilgili profesyoneller
+                    </li>
+                    <li>
+                        Veri Bilimi’ni projeler ile kariyerinde kullanmak isteyenler </li>
+                    <li>
+                        Makine Öğrenmesi, Yapay Zeka, Resim Tanıma gibi Veri Bilimi ile ilişkili terimlerin ne kastettiğini merak edenler içindir.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="gallery">
+        <div class="container-wide">
+            <h2>Geçtiğimiz Seneden Fotoğraflar</h2>
+        </div>
+        <div class="container "> <!--KOPYALAMANIN BAŞI, BURADAN SONRASI GİDECEK.-->
+            <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+            <div class="pa-carousel-widget" style="width:100%; height:480px; display:none;"
+                data-link="https://photos.app.goo.gl/zhGfzNVU1fBvjAuW7" data-title=""
+                data-description="13 new photos added to shared album" data-delay="2" data-background-color="transparent">
+                <object data="https://lh3.googleusercontent.com/L4jkuVQrPKR0oZWuYRvYwQp24NGeJVF1jfCqWKU3qeRBXtdXHf9mVrjE95eR8UeT2guH6xuKHma3ZYS8vpyZXH7lbPjKf39WaDCySz3L99UE0ir-26mFC1vf3hsh8ua52UmEv1EEVA=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/AFJZPbviAsAbfGM5W8PqDfs0DqHyLCZ7KWctOb7aI2MEAXmVd-Pp2XpV5cifG75zD-hIr3QyycEbeo1gAJ6vWuKphpgGgDcTdfMgNZNKdQhq6SWLmTjduvCxWNGqeYcw-dib16D9MQ=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/Oc-3f9SjikqWYQbqKHl1zPknZyj2UW4L4-RwRfKq1Z0mjsd9SdXbA5QzPvb9fBGyAhDECb_zWIvPe7XD9w0quksoZX1Gb2Ec98DMZKow970foEXiGe_BUxTKq2I7zmFupDIE-OYjpg=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/TT4BSuq88pJn2gei5LmFsxNWcNEUTmps1EoYy1lugZUzuYU9c3w7n35mIvySEzsw-yxESw6RSMPHaX7FnA002RcwJCBnU8v05BvXLXDNWWNcXIdc2QifRKTFlnTKx2sbmOZADjFPxw=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/yF0WEVzjXHl2YIOox8A3Zg0_JYWgovLLY6vld6_28s_IB2-QYAprIJZ30ospKfJIX2Hzjk0afp1pzsIsBL5Dqpaz1s0StqxI59Kjfjs35oUKOlLw3ChwEerBBDIIYaQCq9CsOkoJXw=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/Te9D424P9hfHsAB0by4RjSlye0vXtXNei2Qs1ggpcQDo42BmgX5CjRMlxvRpZf784rN3NJDxNL3QYzNBkotBQMg9sA-QKUF8JzDURtX5Z_VFw0bvmbPDkgHvXaYEqOteaNmwr8MQrA=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/m8sDPIhN4HnAmietLa_LVp069sVw9u5Xqccd1wSlglQ2BKQjV0CFPGpHGW9F8Ik1U7cQ_ti516kCqLVBaRbVcc94fGA1VEqR-rnYHT-1sl622twrCN1rIfOv4JLUbfgIJayPo5slPg=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/vHcpl1JOKHDPvKyoNfPlsrLtpJCsqsSKVeXugmy73uNgT-aGlbqL73fBIGwc3u9n-kYxcDgDq8nDB3FnIWC3daZhLFINtlwmKqgc4PSzJMT6s74gdUnPO4BAkL_BqM5cjMW760oIyA=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/jbu3IbM1bd63rrEuCP0zf9hWo04UwcBhT8jwLfREf-MM5pA2nqqljfNg5lJ4q92880BuZ2vmPQ35YmIgkNB48AEFbOd8lfGz_4DFu1g8L3-Ix-1jnyZsqPSPenxfcRxyh5bZd4mMfA=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/0eEIS14uItj0TmqRP4JywPGMX-Q9Z5jxRKNLCLNcftngv0QWSWKRG5aRPXoxG7wYCY5ZxH1I3SRjmr2mCPSYyTfoc8dJqSpxj8UJOHQ_RDb4CGIbuCBWrsJv7de211Xyq3GAreGJaw=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/Ej8R5tMbRUI_bkzZ0Xv-th3lXDEDQXkQllGUm6N55CKh7rMBBCMn4BkpaeykJLASfCrPIKTQCvEVhpFGZXQ0JYDtlutmNRQFtnrAc5zAgG1ywztF7NVtfHZF5IrPgDTj5WuUl7P6zQ=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/0hIWnw8wJq5vs-cRzRAl5kKaLwvBoY2D0rq-iegEceoLYrzEvXhTsE2dorePOJaRmCe7ohRWOlxTKtN2I06XeUEJwwQKxC-PzKUrxRSLb5Jb57nUjyX2pEGHPlJUDy1KoOFbOxYIyg=w1920-h1080"></object>
+                <object data="https://lh3.googleusercontent.com/97xft9ERelqvit03nJ59mXmvsddu5yr3LfGdBrXvvSrDLtPy0HvJzafyOsSZOG6dNHdfBwbJgfYlItK_9-FbLHD9CyjdtYyNECNqXFVJVioQmwAvjfznxuWvMcLNZCgKbOVxUpOuAQ=w1920-h1080"></object>
+
+            </div>
+            <!--BURAYA KADAR, ARASININ YERİNE KOY-->
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container container-wide">
+            <h2>Bize Ulaşın</h3>
+            <div class="d-flex justify-content-center">
+                    <a class="btn" style="background-color:#25D366; color: white;" href="https://wa.me/905012075169?text=Merhaba%20Enes">WhatsApp'tan Ulaşın!</a>
+            </div>
+            <div class="team-container clearfix text-break">
+                <div class="team-member">
+                    <div class="image">
+                        <img src="assets/team/Emin.jpg" alt="Muhammed Emin Deniz">
+                    </div>
+                    <div class="text">
+                        <strong>Muhammed Emin Deniz</strong> <br>
+                        <em>Compec Ar-Ge Direktörü</em> <br>
+                        <a class="mailFont" href="mailto:emin.deniz@compec.org" target="_top">emin.deniz@compec.org</a> <br>
+                   <!-- Ekip iletişim bilgileri    <a href="tel:+905364433684" target="_top">+90 536 443 36 84</a>-->  
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="image">
+                        <img src="assets/team/cansu.jpeg" alt="Cansu Kocabaş">
+                    </div>
+                    <div class="text">
+                        <strong>Cansu Kocabaş</strong> <br>
+                        <em>Compec Dev-Team Lideri</em> <br>
+                        <a class="mailFont" href="mailto:cansu.kocabas@leader.compec.org" target="_top">cansu.kocabas@leader.compec.org</a> <br>
+                     <!--   <a href="tel:+905559939410" target="_top">+90 530 965 06 06</a>-->  
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="image">
+                        <img src="assets/team/halil.jpeg" alt="Halil Salih Orhan">
+                    </div>
+                    <div class="text">
+                        <strong>Halil Salih Orhan</strong> <br>
+                        <em>Compec Dev-Team Lideri</em> <br>
+                        <a class="mailFont" href="mailto:salih.orhan@leader.compec.org" target="_top">salih.orhan@leader.compec.org</a> <br>
+                    <!--     <a href="tel:+905316560971" target="_top">+90 531 656 09 71</a>-->  
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="image">
+                        <img src="assets/team/müge.jpeg" alt="Müge Keçeci">
+                    </div>
+                    <div class="text">
+                        <strong>Müge Keçeci</strong> <br>
+                        <em>Compec Dev-Team Lideri</em> <br>
+                        <a class="mailFont" href="mailto:muge.kececi@leader.compec.org" target="_top">muge.kececi@leader.compec.org</a> <br>
+                     <!--    <a href="tel:+905071913564" target="_top">+90 507 191 35 64</a>-->  
+                    </div>
+                </div>
+            </div>
+            <!-- <h3>Boğaziçi Üniversitesi Albert Long Hall</h3> -->
+            <amp-iframe
+                
+                class=""
+                width="1000"
+                height="300"
+                sandbox="allow-scripts allow-same-origin"
+                layout="responsive"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6lBd43pvJ74B2JyvSdsB4xWWdWuBdBFc&amp;q=albert+long+hall"
+                i-amphtml-layout="responsive"
+                frameborder="0"
+                style="display: none;"
+            >
+                
+                <i-amphtml-scroll-container class="amp-active">
+                    <iframe style="width:100%; height: 40vh" class="" name="amp_iframe0"
+                        frameborder="0" allow="" sandbox="allow-scripts allow-same-origin"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6lBd43pvJ74B2JyvSdsB4xWWdWuBdBFc&amp;q=albert+long+hall#amp=1"></iframe>
+                </i-amphtml-scroll-container>
+            </amp-iframe> 
+        </div>
+        <!-- Harita -->
+        <!-- Ekip iletişim bilgileri-->
+    </section>
+    <section>
+        <div style="text-align:center;">
+            <h2>Mail listemize abone olun</h2>
+            <form style="padding:3px;" action="https://tinyletter.com/bouncompec" method="post" target="popupwindow"
+                onsubmit="window.open('https://tinyletter.com/bouncompec', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                <p>
+                    <label for="tlemail">Mail adresinizi giriniz</label></p>
+                <p>
+                    <input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1"
+                    name="embed" />
+                <input class="btn btn-primary" type="submit" value="Abone ol" />
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="footer-container container">
+            
+            <a target="_blank" href="http://compec.org">
+                <img style="width: 30%" src="assets/compec1white.png" alt="Boğaziçi University IT Club">
+            </a>
+            <p>
+                © 2019 Boğaziçi Üniversitesi Bilişim Kulübü (Compec) Tüm hakkı saklıdır®
+                <br>Etkinliğin tüm hakları Compec'e aittir ve etkinliği haber vermeksizin değiştirme yetkisini elinde tutar.
+            </p>
+        </div>
+        <!--   Compec -->
+    </section>
+    <script>
+     </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <script>
+       
+        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        // geting canvas by id c
+        var header = document.getElementById("animation").getBoundingClientRect();
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+        c.height = window.innerHeight*1.5;
+        c.width = header.width;
+        //chinese characters - taken from the unicode charset
+        //var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+        var matrix = "01";
+        //converting the string into an array of single characters
+        matrix = matrix.split("");
+        var font_size = 20;
+        var columns = c.width/font_size; //number of columns for the rain
+        //an array of drops - one per column
+        var drops = [];
+        //x below is the x coordinate
+        //1 = y co-ordinate of the drop(same for every drop initially)
+        for(var x = 0; x < columns; x++)
+            drops[x] = 1;
+        //drawing the characters
+        function draw()
+        {
+            //Black BG for the canvas
+            //translucent BG to show trail
+            ctx.fillStyle = "rgba(0, 0, 50, 0.04)";
+            ctx.fillRect(0, 0, c.width, c.height);
+            ctx.fillStyle = "#228dd4"; //green text
+            ctx.font = font_size + "px arial";
+            //looping over drops
+            for(var i = 0; i < drops.length; i++)
+            {
+                //a random chinese character to print
+                var text = matrix[Math.floor(Math.random()*matrix.length)];
+                //x = i*font_size, y = value of drops[i]*font_size
+                ctx.fillText(text, i*font_size, drops[i]*font_size);
+                //sending the drop back to the top randomly after it has crossed the screen
+                //adding a randomness to the reset to make the drops scattered on the Y axis
+                if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                    drops[i] = 0;
+                //incrementing Y coordinate
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 50);
+    </script>
+    <script>
+        function resizeCanvas(){
+            if (window.innerWidth < 600){
+                return;
+            }
+            header = document.getElementById("animation").getBoundingClientRect();
+            //c.height = header.height;
+            c.width = header.width;
+            c.height = window.innerHeight;
+            columns = c.width/font_size; //number of columns for the rain
+            //an array of drops - one per column
+            drops = [];
+            //x below is the x coordinate
+            //1 = y co-ordinate of the drop(same for every drop initially)
+            for(var x = 0; x < columns; x++)
+                drops[x] = 1;
+        }
+        window.addEventListener('resize', resizeCanvas, false);
+    </script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var bm = {lat: 41.086065, lng: 29.043930};
+            var nh = {lat: 41.086613, lng: 29.045489};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 14, center: bm});
+            // The marker, positioned at Uluru
+            var bm_marker = new google.maps.Marker({position: bm, map: map, label: 'BM', title: 'BM Buillding B (-2th) floor (for workshops)'});
+            var nh_marker = new google.maps.Marker({position: nh, map: map, label: 'NH', title: 'New Hall 105'});
+        }
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAskF-uLtsMYZ-BveXRd8ov2EaWd0o6mxQ&callback=initMap">
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a.nav-link', {
+            offset: 80
+        });
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 23, 2019 09:30:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Display the result in the element with id="demo"
+            document.getElementById("countdownTimer").innerHTML = days + " Gün " + hours + " Saat " +
+                minutes + " Dakika " + seconds + " Saniye";
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdownTimer").innerHTML = "DataCamp Başladı";
+            }
+        }, 1000);
+        // Source: https://www.w3schools.com/howto/howto_js_countdown.asp
+    </script>
+    <script>
+        
+    $("select[name='isStudentOrPro']").change(()=>{
+        $("#pop").css("display","unset");
+       if( $("select[name='isStudentOrPro']").val()=="student"){
+        $("#student").css("display","unset");
+        $("#pro").css("display","none");
+      
+       }
+       
+       if( $("select[name='isStudentOrPro']").val()=="pro"){
+        $("#pro").css("display","unset");
+        $("#student").css("display","none");
+       }
+    });
+    $("select[name='isBoun']").change(()=>{
+        if($("select[name='isBoun']").val()=="yes"){
+            $("#others").css("display","none");
+           
+        }
+        if($("select[name='isBoun']").val()=="no"){
+            $("#others").css("display","block");
+           
+        }
+    });
+    $("#submit").click(()=>{
+        var validationInputs = document.getElementsByClassName("validation");
+        var validationStudentInputs = document.getElementsByClassName("validationStudent");
+        var validationStudent1Inputs = document.getElementsByClassName("validationStudent1");
+        var validationProInputs = document.getElementsByClassName("validationPro");
+        var isReady1 = true;
+        for (let i = 0; i < validationInputs.length; i++) {
+                if (validationInputs[i].value === "") {
+                    $("#" + validationInputs[i].id).addClass("formError");
+                    isReady1 = false;
+                }
+                else {
+                    $("#" + validationInputs[i].id).removeClass("formError");
+                }
+        }
+        var isReady2 = true;
+        for (let i = 0; i < validationStudentInputs.length; i++) {
+                if (validationStudentInputs[i].value === "") {
+                    $("#" + validationStudentInputs[i].id).addClass("formError");
+                    isReady2 = false;
+                }
+                else {
+                    $("#" + validationStudentInputs[i].id).removeClass("formError");
+                }
+        }
+        var isReady3 = true;
+        for (let i = 0; i < validationStudent1Inputs.length; i++) {
+                if (validationStudent1Inputs[i].value === "") {
+                    $("#" + validationStudent1Inputs[i].id).addClass("formError");
+                    isReady3 = false;
+                }
+                else {
+                    $("#" + validationStudent1Inputs[i].id).removeClass("formError");
+                }
+        }
+        var isReady4 = true;
+        for (let i = 0; i < validationProInputs.length; i++) {
+                if (validationProInputs[i].value === "") {
+                    $("#" + validationProInputs[i].id).addClass("formError");
+                    isReady4 = false;
+                }
+                else {
+                    $("#" + validationProInputs[i].id).removeClass("formError");
+                }
+        }
+        if(isReady1&&((isReady2&&(isReady3||$("#isBoun").val())||isReady4))){
+        var res={
+            name: $("input[name='name']").val(),
+            surname: $("input[name='surname']").val(),
+            email: $("input[name='email']").val(),
+            phoneNumber: $("input[name='phoneNumber']").val(),
+            isStudentOrPro: $("select[name='isStudentOrPro']").val(),
+            school: $("select[name='school']").val()||"Boğaziçi Üniversitesi",
+            department: $("input[name='department']").val(),
+            grade: $("select[name='grade']").val()||"",
+            studentMail: $("input[name='eduMail']").val(),
+            company: $("input[name='company']").val(),
+            title: $("input[name='title']").val(),
+            motivation: $("textarea[name='motivation']").val(),
+            fromWhere: $("input[name='fromWhere']").val(),
+            cvLink: $("input[id='cvLink']").val(),
+            promotion: $("input[name='promotion']").val(),
+            cvAccept: $("input[id='cvAccept']").is(":checked")
+            
+        }
+        console.log(res);
+                
+        let asd="http://datacampapi.dev.compec.org/datacampkayit?usp=pp_url"+
+        "&entry.1140033869="+res.name+
+        "&entry.1139239116="+res.surname+
+        "&entry.1454259181="+res.email+
+        "&entry.1994037736="+res.phoneNumber+
+        "&entry.1620204294="+res.isStudentOrPro+
+        "&entry.226554650="+res.school+
+        "&entry.1614710481="+res.studentMail+
+        "&entry.201698158="+res.department+
+        "&entry.1809406643="+res.company+
+        "&entry.958475025="+res.title+
+        "&entry.358539857="+res.grade+
+        "&entry.815516015="+res.motivation+
+        "&entry.1629977891="+res.fromWhere+
+        "&entry.857178308="+res.cvLink+
+        "&entry.962990275="+res.promotion+
+        "&entry.1465925335="+res.cvAccept+
+        "&submit=Submit"+
+        "&recaptcha="+grecaptcha.getResponse()
+        axios.get(encodeURI(asd)).then(ser=>{
+            if(ser.data.responseCode=="OK") {
+               
+                
+                $("#registerAll").css("display","none");
+                 $("#responseDiv").css("display","unset");
+                 if(res.isStudentOrPro=="student"){
+                 if(res.school=="Boğaziçi Üniversitesi"){
+                    $("#linkPay").attr("href","https://go.compec.org/dtbiletbogazici")
+                } 
+                else {
+                    $("#linkPay").attr("href","https://compec.org/");
+                    $("#linkPay").css("display","none");
+                    $("#sorry").html("BİLETLERİMİZ TÜKENDİĞİNDEN KAYDINIZI GERÇEKLEŞTİREMİYORUZ");
+                } 
+            }
+            else {
+                $("#linkPay").attr("href","https://compec.org");
+                $("#linkPay").css("display","none");
+                $("#sorry").html("BİLETLERİMİZ TÜKENDİĞİNDEN KAYDINIZI GERÇEKLEŞTİREMİYORUZ");
+            }
+            } 
+            grecaptcha.reset();
+            alert(ser.data.responseDesc);
+            fbq('track', 'SubmitApplication');
+        })
+        }
+        else{
+            alert("eksik verileri giriniz.");
+        }
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
