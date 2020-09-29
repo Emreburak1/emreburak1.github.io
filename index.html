@@ -143,7 +143,7 @@
                     </div>
                     <div style="font-size: 1.1wh;" style="transform: translateY(10px)">
                         <h3>Etkinliğe Kalan Süre</h3>
-                        <h3 id="countdownTimer"></h3>
+                        <h3 id="countdownTimer"></h3> <!--Kalan süre için 4 Kasım 00:00'ı baz aldım, değiştirmek isterseniz fonksiyon aşağıda. "Nov 4, 2020 00:00:00" şeklinde aratabilirsiniz.-->
                         <h3>23 - 24 Kasım</h3>
                         <!-- <div class="btn btn-outline-primary">
                             <a data-scroll href="#registerAll" class="nav-link text-warning font-weight-bold text-wrap" style="font-size: 3rem;">Kayıt için Tıkla!</a>
@@ -201,7 +201,7 @@
         <div class="container-wide">
             <h2>Geçtiğimiz Seneden Fotoğraflar</h2>
         </div>
-        <div class="container "> <!--KOPYALAMANIN BAŞI, BURADAN SONRASI GİDECEK.-->
+        <div class="container "> <!--KOPYALAMANIN BAŞI, BURADAN SONRASI GİDECEK. Discord'da toplantıda attığım link ile yapılacak. Bundan farklı görünürse, sıkıntı olursa yazın.-->
             <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
             <div class="pa-carousel-widget" style="width:100%; height:480px; display:none;"
                 data-link="https://photos.app.goo.gl/zhGfzNVU1fBvjAuW7" data-title=""
@@ -432,7 +432,7 @@
     </script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Nov 23, 2019 09:30:00").getTime();
+        var countDownDate = new Date("Nov 4, 2020 00:00:00").getTime();
         // Update the count down every 1 second
         var x = setInterval(function () {
             // Get today's date and time
@@ -454,149 +454,6 @@
             }
         }, 1000);
         // Source: https://www.w3schools.com/howto/howto_js_countdown.asp
-    </script>
-    <script>
-        
-    $("select[name='isStudentOrPro']").change(()=>{
-        $("#pop").css("display","unset");
-       if( $("select[name='isStudentOrPro']").val()=="student"){
-        $("#student").css("display","unset");
-        $("#pro").css("display","none");
-      
-       }
-       
-       if( $("select[name='isStudentOrPro']").val()=="pro"){
-        $("#pro").css("display","unset");
-        $("#student").css("display","none");
-       }
-    });
-    $("select[name='isBoun']").change(()=>{
-        if($("select[name='isBoun']").val()=="yes"){
-            $("#others").css("display","none");
-           
-        }
-        if($("select[name='isBoun']").val()=="no"){
-            $("#others").css("display","block");
-           
-        }
-    });
-    $("#submit").click(()=>{
-        var validationInputs = document.getElementsByClassName("validation");
-        var validationStudentInputs = document.getElementsByClassName("validationStudent");
-        var validationStudent1Inputs = document.getElementsByClassName("validationStudent1");
-        var validationProInputs = document.getElementsByClassName("validationPro");
-        var isReady1 = true;
-        for (let i = 0; i < validationInputs.length; i++) {
-                if (validationInputs[i].value === "") {
-                    $("#" + validationInputs[i].id).addClass("formError");
-                    isReady1 = false;
-                }
-                else {
-                    $("#" + validationInputs[i].id).removeClass("formError");
-                }
-        }
-        var isReady2 = true;
-        for (let i = 0; i < validationStudentInputs.length; i++) {
-                if (validationStudentInputs[i].value === "") {
-                    $("#" + validationStudentInputs[i].id).addClass("formError");
-                    isReady2 = false;
-                }
-                else {
-                    $("#" + validationStudentInputs[i].id).removeClass("formError");
-                }
-        }
-        var isReady3 = true;
-        for (let i = 0; i < validationStudent1Inputs.length; i++) {
-                if (validationStudent1Inputs[i].value === "") {
-                    $("#" + validationStudent1Inputs[i].id).addClass("formError");
-                    isReady3 = false;
-                }
-                else {
-                    $("#" + validationStudent1Inputs[i].id).removeClass("formError");
-                }
-        }
-        var isReady4 = true;
-        for (let i = 0; i < validationProInputs.length; i++) {
-                if (validationProInputs[i].value === "") {
-                    $("#" + validationProInputs[i].id).addClass("formError");
-                    isReady4 = false;
-                }
-                else {
-                    $("#" + validationProInputs[i].id).removeClass("formError");
-                }
-        }
-        if(isReady1&&((isReady2&&(isReady3||$("#isBoun").val())||isReady4))){
-        var res={
-            name: $("input[name='name']").val(),
-            surname: $("input[name='surname']").val(),
-            email: $("input[name='email']").val(),
-            phoneNumber: $("input[name='phoneNumber']").val(),
-            isStudentOrPro: $("select[name='isStudentOrPro']").val(),
-            school: $("select[name='school']").val()||"Boğaziçi Üniversitesi",
-            department: $("input[name='department']").val(),
-            grade: $("select[name='grade']").val()||"",
-            studentMail: $("input[name='eduMail']").val(),
-            company: $("input[name='company']").val(),
-            title: $("input[name='title']").val(),
-            motivation: $("textarea[name='motivation']").val(),
-            fromWhere: $("input[name='fromWhere']").val(),
-            cvLink: $("input[id='cvLink']").val(),
-            promotion: $("input[name='promotion']").val(),
-            cvAccept: $("input[id='cvAccept']").is(":checked")
-            
-        }
-        console.log(res);
-                
-        let asd="http://datacampapi.dev.compec.org/datacampkayit?usp=pp_url"+
-        "&entry.1140033869="+res.name+
-        "&entry.1139239116="+res.surname+
-        "&entry.1454259181="+res.email+
-        "&entry.1994037736="+res.phoneNumber+
-        "&entry.1620204294="+res.isStudentOrPro+
-        "&entry.226554650="+res.school+
-        "&entry.1614710481="+res.studentMail+
-        "&entry.201698158="+res.department+
-        "&entry.1809406643="+res.company+
-        "&entry.958475025="+res.title+
-        "&entry.358539857="+res.grade+
-        "&entry.815516015="+res.motivation+
-        "&entry.1629977891="+res.fromWhere+
-        "&entry.857178308="+res.cvLink+
-        "&entry.962990275="+res.promotion+
-        "&entry.1465925335="+res.cvAccept+
-        "&submit=Submit"+
-        "&recaptcha="+grecaptcha.getResponse()
-        axios.get(encodeURI(asd)).then(ser=>{
-            if(ser.data.responseCode=="OK") {
-               
-                
-                $("#registerAll").css("display","none");
-                 $("#responseDiv").css("display","unset");
-                 if(res.isStudentOrPro=="student"){
-                 if(res.school=="Boğaziçi Üniversitesi"){
-                    $("#linkPay").attr("href","https://go.compec.org/dtbiletbogazici")
-                } 
-                else {
-                    $("#linkPay").attr("href","https://compec.org/");
-                    $("#linkPay").css("display","none");
-                    $("#sorry").html("BİLETLERİMİZ TÜKENDİĞİNDEN KAYDINIZI GERÇEKLEŞTİREMİYORUZ");
-                } 
-            }
-            else {
-                $("#linkPay").attr("href","https://compec.org");
-                $("#linkPay").css("display","none");
-                $("#sorry").html("BİLETLERİMİZ TÜKENDİĞİNDEN KAYDINIZI GERÇEKLEŞTİREMİYORUZ");
-            }
-            } 
-            grecaptcha.reset();
-            alert(ser.data.responseDesc);
-            fbq('track', 'SubmitApplication');
-        })
-        }
-        else{
-            alert("eksik verileri giriniz.");
-        }
-    });
     </script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="main.js"></script>

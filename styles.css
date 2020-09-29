@@ -544,6 +544,7 @@ header.main {
       .programs-container{
           width: 100%;
           display: flex;
+          flex-direction: column;
           align-items: start;
       }
       .program-container{
